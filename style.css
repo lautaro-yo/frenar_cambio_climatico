@@ -1,0 +1,143 @@
+
+/* INFO: Configuración general de toda la página */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* INFO: Elimina el margen predeterminado */
+    margin: 0;
+
+    /* INFO: Tipo de letra */
+    font-family: Arial, sans-serif;
+
+    /* INFO: Color de fondo verde muy claro */
+    background-color: #eaf7e9;
+
+    /* INFO: Color principal del texto */
+    color: #243b2a;
+
+    /* INFO: Espacio alrededor de la página */
+    padding: 24px;
+}
+
+/* INFO: Caja principal que contiene el quiz */
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 18px;
+
+    /* INFO: Sombra alrededor de la caja */
+    box-shadow: 0 4px 15px #00000015;
+}
+
+/* INFO: Encabezado del quiz */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #26753b;
+    font-size: 2.2rem;
+}
+
+header p {
+    line-height: 1.6;
+}
+
+/* INFO: Cada pregunta tendrá su propia tarjeta */
+.pregunta {
+    background-color: #f3faf1;
+    border: 1px solid #d3e8d0;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 18px;
+}
+
+/* INFO: El texto de la pregunta */
+.pregunta legend {
+    font-weight: bold;
+    line-height: 1.5;
+    padding: 0 5px;
+}
+
+/* INFO: Cada respuesta aparece en una línea */
+.opcion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+/* INFO: Tamaño de los botones de selección */
+.opcion input {
+    accent-color: #278642;
+    width: 18px;
+    height: 18px;
+}
+
+/* INFO: Diseño general de los botones */
+button {
+    background-color: #278642;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* INFO: Cambia el color al pasar el ratón */
+button:hover {
+    background-color: #1d6331;
+}
+
+/* INFO: Oculta el resultado hasta que corresponda mostrarlo */
+[hidden] {
+    display: none !important;
+}
+
+/* INFO: Apariencia de la sección de resultados */
+#resultado {
+    background-color: #eaf7e9;
+    border-radius: 12px;
+    padding: 22px;
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+#nivel {
+    color: #26753b;
+}
+
+/* INFO: Pie de página */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #55705b;
+    font-size: 14px;
+}
+
+/* INFO: Adaptación a pantallas pequeñas */
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .contenedor {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
