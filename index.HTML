@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- INFO: Permite que la página se adapte a celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- INFO: Título que aparece en la pestaña del navegador -->
+    <title>Quiz Ecológico</title>
+
+    <!-- INFO: Conecta el archivo HTML con el diseño CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- INFO: Carga JavaScript después de analizar el HTML -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- INFO: Contenedor principal de todo el quiz -->
+    <main class="contenedor">
+
+        <!-- INFO: Encabezado de la página -->
+        <header>
+            <h1>Quiz Ecológico 🌍</h1>
+            <p>
+                Descubrí qué tan sustentables son tus hábitos
+                y cómo podés ayudar al planeta.
+            </p>
+        </header>
+
+        <!-- INFO: Aquí JavaScript colocará las preguntas -->
+        <form id="quiz">
+            <div id="preguntas">
+                <!-- INFO: Las preguntas se generan automáticamente -->
+            </div>
+
+            <!-- INFO: Botón que calcula el resultado -->
+            <button type="submit">Descubrir mi nivel</button>
+        </form>
+
+        <!-- INFO: Aquí aparecerá el resultado final -->
+        <section id="resultado" aria-live="polite" hidden>
+            <h2 id="nivel"></h2>
+            <p id="mensaje"></p>
+            <p id="puntaje"></p>
+
+            <!-- INFO: Permite volver a responder el cuestionario -->
+            <button type="button" id="reiniciar">
+                Volver a hacer el quiz
+            </button>
+        </section>
+
+        <!-- INFO: Pie de página -->
+        <footer>
+            <p>Pequeñas acciones, grandes cambios. 💚</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
