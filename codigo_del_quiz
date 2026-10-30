@@ -1,3 +1,40 @@
-print("Bienvenido a este quiz, que examinara tus habitos y te dira
-  que tan bueno eres con el medio-ambiente y te explicara que faltaria
-  para que desarrolles tu maxima capacidad")
+print("-----")
+print("Bienvenido a este quiz, que examinara tus habitos y te dira que tan bueno eres con el medio-ambiente y te explicara que faltaria para que desarrolles tu maxima capacidad!")
+print("-----")
+
+puntos = 0
+contador = 1
+preguntas = ["¿Apagas las luces al salir de una habitación y desenchufas los aparatos que no estás usando?",
+             "¿Regulas el aire acondicionado a una temperatura moderada (como 24 °C)?",
+             "¿Cerrás la canilla mientras te cepillás los dientes, te enjabonás las manos o lavás los platos?",
+             "¿Tomas duchas cortas (de menos de 7 minutos) para evitar el derroche de agua potable?",
+             "¿Separás los residuos reciclables (plástico, vidrio, cartón) de la basura común en tu casa?",
+             "¿Llevás tus propias bolsas de tela cuando vas al supermercado o a hacer compras?",
+             "¿Evitás comprar botellas de plástico descartables y usás una botella recargable propia?",
+             "¿Intentás reparar los objetos o electrodomésticos rotos antes de tirarlos y comprar uno nuevo?",
+             "¿Evitás imprimir hojas o pedir facturas en papel, priorizando siempre los formatos digitales?",
+             "¿Utilizás trapos de tela lavables en la cocina en lugar de gastar rollos de papel absorbente?",
+             "¿Comés platos basados en vegetales y reducís tu consumo semanal de carne roja?",
+             "¿Calculás bien las porciones de comida al cocinar para evitar que se pongan feas y termines tirándolas?",
+             "¿Hacés compost en tu casa con los restos de frutas, verduras y café, o los llevás a un punto verde?",
+             "¿Tratás de comprar frutas y verduras de estación y que sean producidas localmente?",
+             "¿Utilizás el lavarropas siempre con carga completa y programas de agua fría?",
+             "¿Elegís caminar, usar la bicicleta o el transporte público para tus traslados diarios en lugar de usar el auto solo?",
+             "¿Caminás cuando tenés que hacer trayectos cortos de menos de 10 cuadras en tu barrio?",
+             "¿Comprás ropa de segunda mano o donás/vendés la que ya no usás para apoyar la moda circular?",
+             "¿Utilizás vinagre, bicarbonato o productos de limpieza biodegradables en lugar de químicos muy fuertes?",
+             "¿Conversás con tus amigos o familiares sobre el cuidado del medio ambiente o intentás dar el ejemplo?"]
+for i in preguntas:
+  print("pregunta" ,contador,"/20")
+  pregunta = input(i)
+  contador += 1
+  puntos += int(pregunta)
+
+if puntos >= 20 & puntos <= 36:
+  print("¡Gracias por sumarte al test! Quedaste en el Nivel Tierra 🌍. No te preocupes, esto no es para bajonearse, sino para activar. El lado positivo es que tenés un mapa clarísimo de pequeñas cosas que podés empezar a cambiar desde hoy en casa (¡como cerrar la canilla o desenchufar lo que no usás!). Cada pasito suma un montón. ¡A meterle garra! 💪💚")
+elif puntos >= 37 & puntos <= 49:
+  print("¡Buenísimo el resultado! Estás en el Nivel Brote 🌱 y vas por re buen camino. Se nota que tenés un montón de conciencia ambiental y que ya aplicás varias acciones verdes en tu día a día. El planeta agradece un montón cada uno de tus esfuerzos. ¡Estás a nada de pasar al nivel experto, seguí así de crack! 🌍🙌" )
+elif puntos >= 50 & puntos <= 59:
+  print("¡Tremendo puntaje! Quedaste cabeza a cabeza con la perfección y entraste caminando al Nivel Bosque 🌳✨. Posta que tu estilo de vida es re sustentable y se nota que te comprometés en serio con el cuidado del medio ambiente todos los días. Sos un gran ejemplo para el resto. ¡Felicitaciones por ser tan crack! 🌍🙌")
+elif puntos == 60:
+  print("¡Paren todo! 🚨 Tenemos acá a un auténtico guardián del planeta. Sacaste un puntaje perfecto en el test de hábitos sustentables, ¡Nivel Bosque absoluto! 🌳✨ Posta que es admirable ver cómo te tomás en serio cada pequeño detalle, desde separar los residuos hasta cuidar el agua y la energía. El planeta te debe un monumento (de materiales reciclados, obvio). ¡Felicitaciones por ser tan crack y por darnos el ejemplo diario! 🌍🙌")
